@@ -1,0 +1,79 @@
+.header {
+}
+.navigation{
+  padding: 18px 0;
+}
+.burger {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+.burger::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 3px;
+  background-color: #fff;
+  transform: translateY(10px);
+  transition: 0.2s ease-in-out;
+}
+.burger::after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 3px;
+  background-color: #fff;
+  box-shadow: 0 10px 0 #fff;
+  transform: translateY(-10px);
+  transition: 0.2s ease-in-out;
+}
+
+.burger.active::before {
+  transform: rotate(45deg);
+}
+.burger.active::after {
+  transform: rotate(-45deg);
+  box-shadow: 0 0 0 #000;
+}
+.logo img {
+  margin-left: 27px;
+  border-radius: 7px;
+  width: 28px;
+  height: 20px;
+}
+.logo p {
+  color: #fff;
+  font-size: 18px;
+}
+.input {
+  width: 574px;
+  height: 32px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 4px 0 4px 8px;
+}
+.search-icon {
+  text-align: center;
+  width: 65px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.search-icon i {
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.profile img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.profile-icons i {
+  color: #fff;
+  margin-right: 30px;
+}
